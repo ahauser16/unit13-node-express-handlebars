@@ -10,14 +10,14 @@
 -- this code below was provided by Trinity
 
 
-CREATE DATABASE IF NOT EXISTS burgers_db;
-USE burgers_db;
+CREATE DATABASE IF NOT EXISTS myBurgers_db;
+USE myBurgers_db;
 
 -- If the table already exists, remove it before trying to create the table again
-DROP TABLE IF EXISTS burgers;
+DROP TABLE IF EXISTS burger_table;
 
 -- Create the burgers table
-CREATE TABLE burgers (
+CREATE TABLE burger_table (
     id int NOT NULL AUTO_INCREMENT,
     burger_name varchar(255) NOT NULL,
     devoured BOOL DEFAULT false,
